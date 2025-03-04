@@ -1,4 +1,4 @@
-# IssueMatcher
+# IssueMatcher v0.1 - Prototype
 
 IssueMatcher is a tool that helps developers find "good first issues" on GitHub based on their programming language skills. It analyzes your GitHub repositories to determine your primary programming languages and recommends issues that match your abilities.
 
@@ -21,7 +21,7 @@ IssueMatcher is a tool that helps developers find "good first issues" on GitHub 
 
 1. Clone the repository:
 ```bash
-git clone [repository-url]
+git clone https://github.com/TheRealFREDP3D/IssueMatcher
 cd issuematcher
 ```
 
@@ -71,10 +71,44 @@ python app.py
 4. Filters issues from repositories with significant star counts
 5. Presents a curated list of issues matching your skills
 
+## Additional Features (TODO)
+
+Here are some ideas I have on my todo list:
+
+**User Preferences:** Add form fields for users to specify interests (e.g., "I prefer documentation tasks" or "I want web development issues").
+**Implementation:** Modify the search query to include keywords like "documentation".
+
+**Skill Weighting:** Beyond language frequency, weigh skills by repository size or commit count for accuracy.
+**Implementation:** Use repo.size or fetch commit data with repo.get_commits().
+
+**Caching:** Store API results temporarily to speed up repeated searches.
+**Implementation:** Use Flask-Caching (pip install flask-caching).
+
+**GitHub Login:** Allow users to authenticate with GitHub for private repo access.
+**Implementation:** Integrate Flask-Dance for OAuth.
+
+**Issue Details:** Display more info (e.g., issue description, comment count).
+**Implementation:** Pass additional attributes like issue.body to the template.
+
+## Final Thoughts
+
+This Flask prototype demonstrates a functional "Good First Issue" finder:
+It identifies user skills from their GitHub repositories.
+
+It finds relevant beginner-friendly issues based on those skills.
+
+It includes error handling and a simple UI.
+
+## Media
+
+Podcast by NotebookLM
+
+<audio controls src="assets/issue-matcher-podcast.wav" title="Title"></audio>
+
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
-[License Name] - See LICENSE file for details
+[MIT] - See LICENSE file for details
