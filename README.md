@@ -73,7 +73,7 @@ python app.py
 
 ## Additional Features (TODO)
 
-Here are some ideas I on my todo list:
+Here are some ideas I have on my todo list:
 
 **User Preferences:** Add form fields for users to specify interests (e.g., "I prefer documentation tasks" or "I want web development issues").
 **Implementation:** Modify the search query to include keywords like "documentation".
